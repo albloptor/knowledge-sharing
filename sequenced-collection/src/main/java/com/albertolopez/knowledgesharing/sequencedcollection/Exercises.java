@@ -8,39 +8,48 @@ import java.util.SortedSet;
 public class Exercises {
 
     public int getFirstElementFromList(List<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        //return numbers.get(0);
+        return numbers.getFirst();
     }
 
     public int getLastElementFromList(List<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        //return numbers.get(numbers.size() - 1);
+        return numbers.getLast();
     }
 
     public List<Integer> reverseList(List<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        /*List<Integer> reversedList = new ArrayList<>(numbers);
+        Collections.reverse(reversedList);
+        return reversedList;*/
+        return numbers.reversed();
     }
 
     public Integer getFirstElementFromSortedSet(SortedSet<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        //return numbers.first();
+        return numbers.getFirst();
     }
 
     public Integer getLastElementFromSortedSet(SortedSet<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        //return numbers.last();
+        return numbers.getLast();
     }
 
     public Integer getFirstElementFromDeque(Deque<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        return numbers.getFirst();
     }
 
     public Integer getLastElementFromDeque(Deque<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        return numbers.getLast();
     }
 
     public int getFirstElementFromLinkedHashSet(LinkedHashSet<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        //return numbers.iterator().next();
+        return numbers.getFirst();
     }
 
     public int getLastElementFromLinkedHashSet(LinkedHashSet<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        //return reverseList(List.copyOf(numbers)).get(0);
+        return numbers.getLast();
     }
 
 }

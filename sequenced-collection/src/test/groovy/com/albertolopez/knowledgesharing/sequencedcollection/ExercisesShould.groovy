@@ -1,7 +1,6 @@
 package com.albertolopez.knowledgesharing.sequencedcollection
 
 
-import spock.lang.PendingFeature
 import spock.lang.Specification
 import spock.lang.Subject
 
@@ -10,7 +9,6 @@ class ExercisesShould extends Specification {
     @Subject
     def exercises = new Exercises()
 
-    @PendingFeature
     def "get first element from a list"() {
         expect:
         exercises.getFirstElementFromList(numbers) == result
@@ -21,7 +19,6 @@ class ExercisesShould extends Specification {
         [4, 5, 0, 3, 1] || 4
     }
 
-    @PendingFeature
     def "get last element from a list"() {
         expect:
         exercises.getLastElementFromList(numbers) == result
@@ -32,7 +29,6 @@ class ExercisesShould extends Specification {
         [4, 5, 0, 3, 1] || 1
     }
 
-    @PendingFeature
     def "reverse a list"() {
         expect:
         exercises.reverseList(numbers) == result
@@ -43,7 +39,6 @@ class ExercisesShould extends Specification {
         [4, 5, 0, 3, 1] || [1, 3, 0, 5, 4]
     }
 
-    @PendingFeature
     def "get first element from a sorted set"() {
         given:
         def sortedSet = new TreeSet(numbers)
@@ -57,7 +52,6 @@ class ExercisesShould extends Specification {
         [4, 5, 0, 3, 1] || 0
     }
 
-    @PendingFeature
     def "get last element from a sorted set"() {
         given:
         def sortedSet = new TreeSet(numbers)
@@ -71,7 +65,6 @@ class ExercisesShould extends Specification {
         [4, 5, 0, 3, 1] || 5
     }
 
-    @PendingFeature
     def "get first element from a linked hash set"() {
         given:
         def linkedHashSet = new LinkedHashSet(numbers)
@@ -85,7 +78,6 @@ class ExercisesShould extends Specification {
         [4, 5, 0, 3, 1] || 4
     }
 
-    @PendingFeature
     def "get last element from a linked hash set"() {
         given:
         def linkedHashSet = new LinkedHashSet(numbers)
@@ -99,7 +91,6 @@ class ExercisesShould extends Specification {
         [4, 5, 0, 3, 1] || 1
     }
 
-    @PendingFeature
     def "get first element from a double-ended queue"() {
         given:
         def deque = new ArrayDeque(numbers)
@@ -113,7 +104,6 @@ class ExercisesShould extends Specification {
         [4, 5, 0, 3, 1] || 4
     }
 
-    @PendingFeature
     def "get last element from a double-ended queue"() {
         given:
         def deque = new ArrayDeque(numbers)
