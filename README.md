@@ -11,4 +11,4 @@ You can find each topic in a Gradle module, each containing a README file with t
 
 
 ## Topics
-- Java 21 Sequenced Collections.
+- [Java 21 Sequenced Collections](https://github.com/albloptor/knowledge-sharing/tree/master/sequenced-collection).
