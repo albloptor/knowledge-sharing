@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: "metrics"
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "prometheus"
+          - "metrics"
+          - "health"
+  metrics:
+    distribution:
+      slo:
+        http.server.requests: 5ms,10ms,50ms,100ms,200ms,500ms,1000ms,2000ms
